@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Neue Machina";
+
+  src: url("NeueMachina-Ultrabold.ttf") format("truetype"),
+    url("NeueMachina-Ultrabold.otf") format("opentype");
+    font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: url("NeueMachina-Regular.ttf") format("truetype"),
+    url("NeueMachina-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Druk Wide";
+    src: 
+      url("Druk\ Text\ Wide\ Cyr\ Heavy\ Italic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+  }

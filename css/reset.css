@@ -16,7 +16,6 @@ time, mark, audio, video {
     outline:0;
     font-size:100%;
     vertical-align:baseline;
-    background:transparent;
 }
 
 body {
@@ -29,7 +28,7 @@ footer,header,hgroup,menu,nav,section {
 }
 
 nav ul {
-    list-style: none;
+    list-style:none;
 }
 
 blockquote, q {
