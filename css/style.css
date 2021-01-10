@@ -73,7 +73,11 @@ button {
   margin: 0 auto;
 }
 .container-images {
-  /* height: 100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 .header {
   padding: 30px 0;
@@ -341,7 +345,7 @@ button {
 .decor {
   position: absolute;
   top: 0;
-  left: 320px;
+  left: 350px;
 }
 .castle {
   position: absolute;
