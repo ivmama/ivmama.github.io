@@ -23,13 +23,12 @@ body {
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  z-index: -2;
+  z-index: -3;
 }
 .background::before {
   content: "";
@@ -61,6 +60,7 @@ a {
   font-family: "Neue Machina";
   color: #ffffff;
   font-weight: 400;
+  cursor: pointer;
 }
 
 button {
@@ -68,8 +68,8 @@ button {
 }
 .container,
 .container-images {
-  max-width: 1347px;
-  padding: 0 10px;
+  max-width: 1406px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 .container-images {
@@ -78,6 +78,10 @@ button {
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: -1;
+  background-image: url("../images/shadows.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
 }
 .header {
   padding: 30px 0;
@@ -101,7 +105,6 @@ button {
   align-items: flex-end;
   width: 290px;
   height: 70px;
-  z-index: 10;
 }
 
 .header__prize img {
@@ -138,11 +141,11 @@ button {
 
 .left-content {
   max-width: 550px;
-  z-index: 1;
 }
 .right-content {
   flex-grow: 2;
   position: relative;
+  z-index: -2;
 }
 
 .about-text {
@@ -345,7 +348,7 @@ button {
 .decor {
   position: absolute;
   top: 0;
-  left: 350px;
+  left: 450px;
 }
 .castle {
   position: absolute;
@@ -365,7 +368,6 @@ button {
   animation-name: levitation-1;
   animation-duration: 8s;
   animation-iteration-count: infinite;
-  z-index: 1;
 }
 
 @keyframes levitation-1 {
@@ -382,7 +384,6 @@ button {
   animation-name: levitation-2;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  z-index: 1;
 }
 
 @keyframes levitation-2 {
@@ -399,7 +400,6 @@ button {
   animation-name: levitation-3;
   animation-duration: 7s;
   animation-iteration-count: infinite;
-  z-index: 1;
 }
 @keyframes levitation-3 {
   50% {
@@ -452,3 +452,5 @@ button {
 .header__prize--mobile {
   display: none;
 }
+
+

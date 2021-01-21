@@ -2,11 +2,28 @@
   .man {
     height: calc(100% + 150px);
   }
-
+}
+@media (max-width: 1160px) {
+  .ball-1 {
+    right: 20px;
+    width: 100px;
+    height: 100px;
+  }
+  .ball-3 {
+    top: 100px;
+    left: 400px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 @media (max-width: 944px) {
-
+  .background {
+    background-image: url("../images/bg-mobile.jpg");
+  }
+  .container-images {
+    background-image: none;
+  }
   .ball-1 {
     width: 100px;
     height: 100px;
@@ -16,18 +33,24 @@
   .ball-2 {
     width: 47px;
     height: 47px;
-    top: 395px;
+    top: 450px;
     left: 5px;
   }
   .ball-3 {
-   width: 34px;
-   height: 34px;
-   bottom: 430px;
-   left: 50px;
+    width: 34px;
+    height: 34px;
+    bottom: 430px;
+    top: auto;
+    left: 50px;
+  }
+  .background::after {
+    height: 40%;
   }
 
   .decor {
-    display: none;
+    top: auto;
+    bottom: 500px;
+    left: -20px;
   }
 
   .header {
@@ -71,34 +94,22 @@
     min-height: 357px;
   }
 
-  .right-content::after {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 1000%;
-    background: linear-gradient(
-      0deg,
-      rgba(112, 0, 232, 0) 0%,
-      rgb(112, 0, 232, 1) 30%,
-      rgb(112, 0, 232, 1) 70%,
-      rgba(112, 0, 232, 0) 100%
-    );
-    opacity: 0.8;
-    bottom: -200px;
-    left: -500%;
-  }
 
   .man {
-    left: -28px;
+    left: -5%;
     bottom: -50px;
     max-height: calc(100% + 50px);
+  
   }
 
   .castle {
     bottom: 10px;
     height: 100%;
-    right: -100px;
+    right: -5%;
   }
+
+  
+
   .about-text {
     max-width: 400px;
     font-size: 24px;
@@ -159,6 +170,24 @@
   .header__prize--mobile {
     display: flex;
     margin-top: 40px;
+    justify-content: center;
+    font-size: 18px;
+  }
+  .header__prize-description {
+    max-width: 215px;
+  }
+  .header__prize-link {
+    font-size: 18px;
+    line-height: 18px;
+  }
+  .header__prize img {
+    width: 20px;
+    height: 53px;
+    width: 27px;
+  }
+
+  .header__prize-text {
+    margin-top: 4px;
   }
 
   .footer__inner {
@@ -241,5 +270,114 @@
   }
   .about-text:hover .like::before {
     opacity: 1;
+  }
+}
+
+@media (min-width: 1700px) {
+  .container,
+  .container-images {
+    max-width: 1700px;
+  }
+  .header__logo img {
+    width: 150%;
+    height: 150%;
+  }
+
+  .header__prize {
+    width: 450px;
+    height: 100px;
+  }
+  .header__prize img {
+    height: 100px;
+    width: 70px;
+  }
+  .header__prize-link {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .header__prize-text {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .about-text {
+    max-width: 800px;
+    font-size: 60px;
+  }
+
+  .like {
+    margin-top: 20px;
+    font-size: 120px;
+  }
+  .about-text__like--shadow {
+    font-size: 119px;
+    letter-spacing: 2px;
+  }
+  .like::after,
+  .like::before {
+    left: -35px;
+    top: -5px;
+    width: 110px;
+    height: 120px;
+  }
+
+  .about-text:hover .about-text__like {
+    transform: translate(125px);
+  }
+
+  .about-text:hover .about-text__like--shadow {
+    transform: translate(105px);
+  }
+
+  .about-text:hover .like::after {
+    transform: translate(50px);
+  }
+
+  .info {
+    padding-top: 48px;
+    max-width: 700px;
+  }
+
+  .info__btn--front a {
+    padding: 40px 0;
+    font-size: 34px;
+  }
+
+  .info__btn--shadow {
+    top: 15px;
+    left: 15px;
+  }
+  .info__btn:hover .info__btn--front {
+    transform: translate(15px, 15px);
+    border-radius: 15px;
+  }
+
+  .info__btn:hover .info__btn--shadow {
+    border-radius: 10px;
+  }
+
+  .info__link {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .info__text {
+    top: 340px;
+    font-size: 60px;
+    line-height: 70px;
+  }
+  .ball-1 {
+    width: 270px;
+    height: 270px;
+    top: 300px;
+  }
+  .ball-2 {
+    width: 120px;
+    height: 120px;
+    left: 530px;
+  }
+
+  .ball-3 {
+    width: 140px;
+    height: 140px;
   }
 }
